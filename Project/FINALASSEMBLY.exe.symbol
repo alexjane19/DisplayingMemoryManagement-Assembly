@@ -1,0 +1,188 @@
+< THE SYMBOL TABLE >  FINALASSEMBLY.exe  --  emu8086 assembler version: 4.03 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00020     	-5        	SEGMENT   	(ITSELF)  
+TEST_TEXT_ROW            	00000     	2         	VAR       	data      
+TEST_TEXT_COL            	00002     	2         	VAR       	data      
+TEST_TEXT_COLOR          	00004     	1         	VAR       	data      
+TESTSTRING               	00005     	-1        	LABEL     	data      
+FONTPOINTER              	00008     	2         	VAR       	data      
+SPOINT                   	0000C     	2         	VAR       	data      
+EPOINT                   	0000E     	2         	VAR       	data      
+PMEM                     	00010     	2         	VAR       	data      
+SPAGE                    	00012     	1         	VAR       	data      
+MENU1                    	00013     	1         	VAR       	data      
+MENU2                    	00021     	1         	VAR       	data      
+MENU3                    	00037     	1         	VAR       	data      
+MENU4                    	00050     	1         	VAR       	data      
+MENU5                    	0005D     	1         	VAR       	data      
+MENU6                    	00081     	1         	VAR       	data      
+MENU31                   	0008A     	1         	VAR       	data      
+MENU32                   	00095     	1         	VAR       	data      
+MSG1                     	000A2     	1         	VAR       	data      
+MSG2                     	000B5     	1         	VAR       	data      
+MSG3                     	000C8     	1         	VAR       	data      
+MSG4                     	000E0     	1         	VAR       	data      
+MSG5                     	000F9     	1         	VAR       	data      
+MSGHRATE                 	00134     	1         	VAR       	data      
+MSGETASK                 	00140     	1         	VAR       	data      
+MSGNPROG                 	0014F     	1         	VAR       	data      
+MSGSPROG                 	00161     	1         	VAR       	data      
+MSGPMEM                  	0017F     	1         	VAR       	data      
+MSGPAGEOPT               	00195     	1         	VAR       	data      
+ALLOCATING               	001B0     	1         	VAR       	data      
+SIZEMEMORY               	001BB     	-1        	LABEL     	data      
+MAXLEN1                  	001BB     	1         	VAR       	data      
+ACTELN1                  	001BC     	1         	VAR       	data      
+KBDATA1                  	001BD     	1         	VAR       	data      
+NPROGRAM                 	001D1     	-1        	LABEL     	data      
+MAXLEN                   	001D1     	1         	VAR       	data      
+ACTELN                   	001D2     	1         	VAR       	data      
+KBDATA                   	001D3     	1         	VAR       	data      
+NAMEPROG                 	001E7     	-1        	LABEL     	data      
+NPMAXLEN                 	001E7     	1         	VAR       	data      
+NPACTELN                 	001E8     	1         	VAR       	data      
+NPKBDATA                 	001E9     	1         	VAR       	data      
+SIZEPROG                 	001FD     	-1        	LABEL     	data      
+SPMAXLEN                 	001FD     	1         	VAR       	data      
+SPACTELN                 	001FE     	1         	VAR       	data      
+SPKBDATA                 	001FF     	1         	VAR       	data      
+TEMPWORD                 	00213     	-1        	LABEL     	data      
+MAXLENTEMP               	00213     	1         	VAR       	data      
+ACTELNTEMP               	00214     	1         	VAR       	data      
+KBDATATEMP               	00215     	1         	VAR       	data      
+SIZEMEM                  	00229     	1         	VAR       	data      
+NUMPAGEMEM               	0022A     	1         	VAR       	data      
+STARTLPR                 	0022B     	2         	VAR       	data      
+ENDLPR                   	0022D     	2         	VAR       	data      
+LISTPROGRAM              	0022F     	1         	VAR       	data      
+STARTLPA                 	00257     	2         	VAR       	data      
+ENDLPA                   	00259     	2         	VAR       	data      
+LISTPAGE                 	0025B     	1         	VAR       	data      
+NUMPAGEVIRTU             	002BF     	1         	VAR       	data      
+OFFSETPAGE               	002C0     	2         	VAR       	data      
+NUMOFPAGEP               	00310     	1         	VAR       	data      
+NUMOFPROG                	00338     	1         	VAR       	data      
+STARTLISTPAGE            	00339     	2         	VAR       	data      
+NUMPAGEV                 	0033B     	1         	VAR       	data      
+DIT                      	0033C     	2         	VAR       	data      
+SIT                      	0033E     	2         	VAR       	data      
+CXT                      	00340     	2         	VAR       	data      
+DIX                      	00342     	2         	VAR       	data      
+HITRATE                  	00344     	1         	VAR       	data      
+ASC_NUM                  	003A8     	1         	VAR       	data      
+PTRLM                    	003AC     	2         	VAR       	data      
+STARTLM                  	003AE     	2         	VAR       	data      
+ENDLM                    	003B0     	2         	VAR       	data      
+LISTMEMORY               	003B2     	1         	VAR       	data      
+RANDNUM                  	003E4     	1         	VAR       	data      
+DIVRANDM                 	003E5     	1         	VAR       	data      
+AVAILBPAGE               	003E6     	1         	VAR       	data      
+COUNTENDLIST             	003E7     	2         	VAR       	data      
+STARTLIST                	003E9     	2         	VAR       	data      
+ENDLIST                  	003EB     	2         	VAR       	data      
+CODE                     	0005F     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	FAR       	code      
+STARTPRG                 	0002F     	-1        	LABEL     	code      
+STARTPRG1                	00036     	-1        	LABEL     	code      
+REPET                    	00048     	-1        	LABEL     	code      
+AGAIN1                   	00073     	-1        	LABEL     	code      
+AGAIN                    	00076     	-1        	LABEL     	code      
+NOTREPETE                	00098     	-1        	LABEL     	code      
+MEN2                     	000D4     	-1        	LABEL     	code      
+MEN3                     	000DD     	-1        	LABEL     	code      
+MEN4                     	000E6     	-1        	LABEL     	code      
+MEN42                    	00112     	-1        	LABEL     	code      
+MEN5                     	0011E     	-1        	LABEL     	code      
+MEN6                     	00125     	-1        	LABEL     	code      
+ENDMEN                   	0012E     	-1        	LABEL     	code      
+CALCHITRATE              	0013E     	-1        	NEAR      	          
+NEXTWORD11               	0014B     	-1        	LABEL     	          
+PRTSTR11                 	00155     	-1        	LABEL     	          
+BACK11                   	00180     	-1        	LABEL     	          
+CHOP                     	00190     	-1        	LABEL     	          
+BACK12                   	001B3     	-1        	LABEL     	          
+CHOP1                    	001C3     	-1        	LABEL     	          
+NEXTLETER1               	001F3     	-1        	LABEL     	          
+SHOWPROGRAM              	001FD     	-1        	NEAR      	          
+NEXTWORD                 	0020D     	-1        	LABEL     	          
+PRTSTR                   	0021D     	-1        	LABEL     	          
+GETCOM                   	00231     	-1        	LABEL     	          
+BREAK                    	00244     	-1        	LABEL     	          
+SHOWPAGE                 	00263     	-1        	NEAR      	          
+NEXTWORD112              	00273     	-1        	LABEL     	          
+PRTSTR112                	00283     	-1        	LABEL     	          
+NEXTELEMNT               	0029D     	-1        	LABEL     	          
+LOCATEPAGE               	002AA     	-1        	NEAR      	          
+LLL                      	002B5     	-1        	LABEL     	          
+ENDFUNLO                 	002FB     	-1        	LABEL     	          
+FREEMEMPAGE              	0030E     	-1        	NEAR      	          
+BACKFUN1                 	00315     	-1        	LABEL     	          
+FRONTH2                  	00357     	-1        	LABEL     	          
+FRONTH1                  	0035B     	-1        	LABEL     	          
+ENDFREE                  	00360     	-1        	LABEL     	          
+FREEMEMPAGEOPTIC         	00361     	-1        	NEAR      	          
+BACKFUN111               	00385     	-1        	LABEL     	          
+FINDELEM                 	00394     	-1        	LABEL     	          
+FRONTH112                	003B9     	-1        	LABEL     	          
+FRONTH111                	003BD     	-1        	LABEL     	          
+ENDFREE1                 	003CC     	-1        	LABEL     	          
+ALLOCMEMPAGE             	003CD     	-1        	NEAR      	          
+BACKFUN                  	003DA     	-1        	LABEL     	          
+FINDX12                  	00406     	-1        	LABEL     	          
+FRONTX12                 	00419     	-1        	LABEL     	          
+NOTCHECK                 	0041B     	-1        	LABEL     	          
+CHECKHIT                 	00421     	-1        	LABEL     	          
+HITFOUND                 	0042F     	-1        	LABEL     	          
+FINDX                    	00445     	-1        	LABEL     	          
+FRONTX                   	00455     	-1        	LABEL     	          
+FULLMEM                  	00469     	-1        	LABEL     	          
+BACKFUN2                 	00469     	-1        	LABEL     	          
+FINDX122                 	00495     	-1        	LABEL     	          
+FRONTX122                	004A8     	-1        	LABEL     	          
+NOTCHECK1                	004AA     	-1        	LABEL     	          
+CHECKHIT1                	004B0     	-1        	LABEL     	          
+HITFOUND1                	004BE     	-1        	LABEL     	          
+FRONTER                  	004E0     	-1        	LABEL     	          
+ENDFUN                   	004E4     	-1        	LABEL     	          
+GENERANDNUM              	004E5     	-1        	NEAR      	          
+OKEY                     	004F7     	-1        	LABEL     	          
+NEXTR                    	0050F     	-1        	LABEL     	          
+SETSIZEMEMPAGE           	00514     	-1        	NEAR      	          
+BACK                     	0052C     	-1        	LABEL     	          
+NEXT                     	0054C     	-1        	LABEL     	          
+B11                      	0056C     	-1        	LABEL     	          
+BACK1                    	00595     	-1        	LABEL     	          
+NEXT1                    	005B5     	-1        	LABEL     	          
+FRONT1                   	005EF     	-1        	LABEL     	          
+DRAWMEMORY               	005FE     	-1        	NEAR      	          
+LOO                      	00610     	-1        	LABEL     	          
+LOOO                     	0063B     	-1        	LABEL     	          
+LOO1                     	0064D     	-1        	LABEL     	          
+LOOO1                    	00677     	-1        	LABEL     	          
+LOO2                     	00698     	-1        	LABEL     	          
+SETPROGRAM               	006AE     	-1        	NEAR      	          
+RESTPROG                 	006AE     	-1        	LABEL     	          
+BACK2                    	006DF     	-1        	LABEL     	          
+BACK3                    	006F8     	-1        	LABEL     	          
+NEXTT                    	00725     	-1        	LABEL     	          
+FRONT                    	0074A     	-1        	LABEL     	          
+FINDPOS1                 	00752     	-1        	LABEL     	          
+FINDPOS                  	0076F     	-1        	LABEL     	          
+BACK4                    	0077E     	-1        	LABEL     	          
+CLRSCR                   	007B0     	-1        	NEAR      	          
+PRINT                    	007C7     	-1        	NEAR      	          
+DRAWSTRING               	00801     	-1        	NEAR      	          
+LEFTHALFLOOP             	0086B     	-1        	LABEL     	          
+LEFTHALFLOOPDONE         	00876     	-1        	LABEL     	          
+RIGHTHALFLOOP            	00882     	-1        	LABEL     	          
+RIGHTHALFLOOPDONE        	0088D     	-1        	LABEL     	          
+CHARACTERUP              	00896     	-1        	NEAR      	          
+CHARACTERLOOP            	008A8     	-1        	LABEL     	          
+SELECTFONT               	008B7     	-1        	NEAR      	          
+===================================================================================================
+[ 2/6/2015  --  4:23:08 PM ] 
+< END >
+ 

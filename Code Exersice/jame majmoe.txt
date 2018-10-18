@@ -1,0 +1,36 @@
+;barname 2
+
+datasg segment 'data'        
+    A1 db 1,2,3,4,5
+    A2 db  ?
+    ; add your data here!
+    pkey db "press any key...$"
+ends
+
+stack segment  'stack'
+    dw   128  dup(0)
+ends
+
+code segment 'code'
+    assume ss:codesg,ds:codesg,cs:codesg
+start:
+; set segment registers:
+main proc far 
+    mov ax,datasg
+    mov ds,ax
+    
+    mov cx, 4
+    mov SI, 0    
+    mov al, [A1+SI]
+    
+Here:   inc SI
+        add al,[A1+SI] 
+        loop Here
+    
+        mov [A2+0],al
+    mov ax, 4c00h
+    int 21h        ; output string at ds:dx
+               
+ends
+
+end start ; set entry point and stop the assembler.
